@@ -1,0 +1,247 @@
+/* DESKTOP */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+@font-face {
+  font-family: "josephsophia";
+  src: url("/Fonts/josephsophia/josephsophia.ttf");
+}
+@font-face {
+  font-family: "indie";
+  src: url(/Fonts/Indie_Flower/IndieFlower-Regular.ttf);
+}
+header {
+  background-color: #80559c;
+  font-family: "josephsophia";
+}
+body {
+  background-color: #80559c;
+  width: 100vw;
+}
+ul {
+  list-style-type: none;
+}
+li a {
+  color: #1c263b;
+  text-decoration: none;
+}
+li a:hover {
+  text-decoration: solid;
+  color: #ceefbb;
+}
+.diseñoMenu {
+  text-align: right;
+  display: inline;
+  background-color: #b3b3bf;
+  padding: 4px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+.logo {
+  height: 200px;
+  float: left;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  bottom: 0px;
+  top: 0px;
+  max-width: 200px;
+}
+.Facebook {
+  font-size: 2rem;
+  margin: 10px;
+  float: left;
+}
+.Instagram {
+  font-size: 2rem;
+  margin: 10px;
+  float: left;
+}
+.WhatsApp {
+  font-size: 2rem;
+  margin: 10px;
+  float: left;
+}
+footer {
+  padding: 30px;
+}
+.menu-flex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.imgFondo {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/Img/hh.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+div h2 {
+  font-family: "josephsophia";
+  color: #051975;
+  font-size: 70px;
+  line-height: 50px;
+  font-weight: 500;
+  text-shadow: 2px 2px #bfdb64fa;
+  margin-left: 20px;
+}
+div h3 {
+  font-family: "josephsophia";
+  color: #051975;
+  font-size: 70px;
+  font-weight: 500;
+  text-shadow: 2px 2px #bfdb64fa;
+  margin-left: 20px;
+}
+.FacebookHeader {
+  font-size: 2rem;
+}
+.InstagramHeader {
+  font-size: 2rem;
+}
+.WhatsappHeader {
+  font-size: 2rem;
+}
+section {
+  color: white;
+  font-size: 2rem;
+}
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+nav {
+  width: 100%;
+}
+footer p {
+  font-size: 1.5rem;
+}
+p a:hover {
+  text-decoration: solid;
+  color: #ceefbb;
+}
+p a {
+  color: #1c263b;
+  text-decoration: none;
+}
+section {
+  font-size: 1.5rem;
+  font-family: "indie";
+}
+/* Grid */
+.gridMain {
+  display: grid;
+  grid-template-areas:
+    "img1 texto1"
+    "texto2 img2"
+    "img3 texto3"
+    "texto4 img4"
+    "img5 texto5"
+    "texto6 img6"
+    "img7 texto7";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.texto1 {
+  grid-area: texto1;
+}
+.img1 {
+  grid-area: img1;
+}
+.texto2 {
+  grid-area: texto2;
+}
+.img2 {
+  grid-area: img2;
+}
+.texto3 {
+  grid-area: texto3;
+}
+.img3 {
+  grid-area: img3;
+}
+.texto4 {
+  grid-area: texto4;
+}
+.img4 {
+  grid-area: img4;
+}
+.texto5 {
+  grid-area: texto5;
+}
+.img5 {
+  grid-area: img5;
+}
+.texto6 {
+  grid-area: texto6;
+}
+.img6 {
+  grid-area: img6;
+}
+.texto7 {
+  grid-area: texto7;
+}
+.img7 {
+  grid-area: img7;
+}
+/*TABLETS*/
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    background-color: darkgoldenrod;
+    font-size: 1rem;
+  }
+}
+/*SMARTPHONE*/
+@media (max-width: 480px) {
+  body {
+    background-color: black;
+    font-size: 0.5rem;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  border: 1px solid rgba(00, 00, 00, 0.25);
+  border-radius: 15px;
+  background-color: white;
+}
+
+.btn-prod {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: green;
+  display: block;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+p span {
+  color: green;
+  font-weight: 600;
+  font-size: 2rem;
+}
